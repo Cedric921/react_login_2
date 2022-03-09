@@ -1,5 +1,4 @@
 
-import './App.css';
 import { Routes, Route} from 'react-router-dom'
 import Login from './components/Login';
 import Logon from './components/Logon';
@@ -14,9 +13,9 @@ function App() {
         <Route path='/login' element={<Login />} />
       </Routes>
 
-      <div className='image'>
+      {/*<div className='image'>
         <img src={ImageBg} alt='' />
-      </div>
+  </div>*/}
     </div>
   )
 }
