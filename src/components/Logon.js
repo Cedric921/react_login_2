@@ -18,7 +18,8 @@ import {
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption'
+import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption';
+import ImageBg from './../assets/bg.jpg';
 //import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 const Logon = () => {
@@ -80,7 +81,7 @@ const Logon = () => {
                 variant='h4'
                 component='h4'
                 sx={{
-                  bgcolor: 'white',
+                  /*background: -webkit-linear-gradient(#eee, #333);*/
                   textAlign: 'center',
                   color: 'red',
                 }}
@@ -201,17 +202,43 @@ const Logon = () => {
               <Divider variant='middle' />
             </Stack>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{}}>
             <Stack
               sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
                 width: '100%',
                 height: '100%',
+                 backgroundImage: `url(${ImageBg})`,
                 my: 0,
                 mx: 0,
+                p: 5,
                 bgcolor: 'red',
+                py: '1%',
               }}
             >
-              <img src='/image.svg' alt='images' />
+              <Typography
+                variant='h4'
+                component='h4'
+                sx={{
+                  textAlign: 'center',
+                  color: 'White',
+                }}
+              >
+                INFINITY
+              </Typography>
+              <Typography
+                variant='p'
+                component='p'
+                sx={{
+                  color: 'white',
+                }}
+              >
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Incidunt asperiores enim non labore sapiente? Quod nisi eaque ea
+                fugiat consequatur, dignissimos debitis a optio.
+              </Typography>
             </Stack>
           </Grid>
         </Grid>

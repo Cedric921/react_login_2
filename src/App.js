@@ -2,7 +2,7 @@
 import { Routes, Route} from 'react-router-dom'
 import Login from './components/Login';
 import Logon from './components/Logon';
-import ImageBg from './assets/login.svg';
+
 
 function App() {
 
