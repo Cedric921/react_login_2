@@ -109,8 +109,9 @@ const Logon = () => {
             <Stack
               sx={{
                 width: 0.75,
-                my: { xs: 8, md: 0 },
-                mx: 'auto',
+                my: 0,
+                mx: 0,
+                bgcolor : 'red'
               }}
             >
               <img src='/image.svg' alt='images' />
