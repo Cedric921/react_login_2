@@ -78,7 +78,7 @@ const Logon = () => {
             </Grid>
             <Grid item xs={12} md={6}>
               <Stack sx={{ width: 0.75, my: { xs: 8, md: 0 }, mx: 'auto' }}>
-                <img src="/image.svg" alt="image" />
+                <img src="/image.svg" alt="images" />
               </Stack>
             </Grid>
           </Grid>
