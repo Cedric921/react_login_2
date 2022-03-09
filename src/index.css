@@ -124,8 +124,26 @@ a {
 }
 
 */
+.circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  background-color: rgb(253, 2, 2);
+  border-right: 10px solid rgb(214, 11, 11);
+  width: 450px;
+  height: 450px;
+  border-bottom-right-radius:100%;
+}
 
-
-Container{
-  margin-top: 20px;
+.circle2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -999;
+  background-color: red;
+  border-left: 3px solid rgb(214, 11, 11);
+  width: 30px;
+  height: 20px;
+  border-radius: 150% 0 0 0;
 }

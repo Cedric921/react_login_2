@@ -28,16 +28,26 @@ const Logon = () => {
             bgcolor: 'white',
             height: '80vh',
             margin: '10vh',
-            p: 4,
+            mx: 'auto',
             textAlign: 'center',
-            borderRadius: 1,
+            borderRadius: '10px',
             boxShadow: '0 2px 8px 0 rgba(0,0,0,0.4)',
           }}
         >
-          <Grid item xs={12} md={6}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+              bgcolor: 'white',
+              textAlign: 'center',
+              px: '7%',
+              py: '3%',
+            }}
+          >
             <Stack spacing={2}>
               <Typography variant='p' component='p'>
-                Welcome to
+                WELCOME TO
               </Typography>
 
               <Typography
@@ -51,22 +61,29 @@ const Logon = () => {
               >
                 INFINITY
               </Typography>
+              <Typography
+                variant='p'
+                component='p'
+                sx={{
+                  color: 'rgb(153, 130, 127)',
+                  py: '1%',
+                }}
+              >
+                Log in to get the moment updates on the things that interest you
+              </Typography>
 
-              <Input
-                label='sername'
-                placeholder='Username'
-              />
+              <Input label='sername' placeholder='Username' />
 
-              <Input
-                label='password' placeholder='Password' />
+              <Input label='password' placeholder='Password' />
               <Stack justifyContent='space-between' direction='row'>
                 <Button
                   color='primary'
                   variant='contained'
                   sx={{
-                    px: '0', py: '2',
-                    width: '100%', bgcolor: 'red',
-                    borderRadius: 4
+                    px: '0',
+                    width: '100%',
+                    bgcolor: 'red',
+                    borderRadius: 4,
                   }}
                 >
                   SIGN IN
@@ -78,8 +95,12 @@ const Logon = () => {
                   component='a'
                   href='htttps://privacylink.com'
                   color='primary.main'
+                  sx={{
+                    color: 'red',
+                    textDecoration : 'none'
+                  }}
                 >
-                  {'Sign up Here'}
+                  {'Sign up Non'}
                 </Typography>
               </Typography>
             </Stack>
