@@ -13,6 +13,7 @@ import {
   OutlinedInput,
   InputAdornment,
   IconButton,
+  Divider,
 } from '@mui/material'
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
@@ -194,15 +195,17 @@ const Logon = () => {
                     textDecoration: 'none',
                   }}
                 >
-                  {'Sign up Non'}
+                  {'Sign up Now'}
                 </Typography>
               </Typography>
+              <Divider variant='middle' />
             </Stack>
           </Grid>
           <Grid item xs={12} md={6}>
             <Stack
               sx={{
-                width: 0.75,
+                width: '100%',
+                height: '100%',
                 my: 0,
                 mx: 0,
                 bgcolor: 'red',
