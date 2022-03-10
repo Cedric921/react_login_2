@@ -131,8 +131,8 @@ a {
   z-index: -999;
   background-color: rgb(253, 2, 2);
   border-right: 10px solid rgb(214, 11, 11);
-  width: 450px;
-  height: 450px;
+  width: 300px;
+  height: 300px;
   border-bottom-right-radius:100%;
 }
 

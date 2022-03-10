@@ -14,10 +14,12 @@ import {
   InputAdornment,
   IconButton,
   Divider,
+  
 } from '@mui/material'
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import SvgIcon from '@mui/material/SvgIcon';
 import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption';
 import ImageBg from './../assets/bg.jpg';
 //import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
@@ -27,7 +29,15 @@ const Login = () => {
     username: '',
     password: '',
     showPassword: false,
-  })
+  });
+
+  function HomeIcon(props) {
+  return (
+    <SvgIcon {...props}>
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+    </SvgIcon>
+  );
+}
 
   const handleChange = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value })
@@ -54,7 +64,7 @@ const Login = () => {
           sx={{
             bgcolor: 'white',
             height: '80vh',
-            margin: '10vh',
+            margin: '20px',
             mx: 'auto',
             textAlign: 'center',
             borderRadius: '10px',
@@ -69,7 +79,7 @@ const Login = () => {
               bgcolor: 'white',
               textAlign: 'center',
               px: '7%',
-              py: '3%',
+              py: '10px',
             }}
           >
             <Stack spacing={2}>
@@ -99,7 +109,10 @@ const Login = () => {
                 Log in to get the moment updates on the things that interest you
               </Typography>
 
-              <FormControl sx={{ m: 1, width: '100%' }} variant='outlined'>
+              <FormControl
+                sx={{ m: 1, p: 0, width: '100%' }}
+                variant='outlined'
+              >
                 <InputLabel htmlFor='outlined-adornment-password'>
                   Username
                 </InputLabel>
@@ -118,6 +131,7 @@ const Login = () => {
                       <AccountCircle
                         sx={{
                           mx: 2,
+                          my: 0,
                         }}
                       />
                     </InputAdornment>
@@ -200,6 +214,18 @@ const Login = () => {
                 </Typography>
               </Typography>
               <Divider variant='middle' />
+              <Typography>Continue with social media</Typography>
+              <Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                }}
+              >
+                <HomeIcon sx={{ color: 'red' }} />
+                <HomeIcon sx={{ color: 'red' }} />
+                <HomeIcon sx={{ color: 'red' }} />
+                <HomeIcon sx={{ color: 'red' }} />
+              </Box>
             </Stack>
           </Grid>
           <Grid item xs={12} md={6} sx={{}}>
@@ -210,7 +236,7 @@ const Login = () => {
                 justifyContent: 'center',
                 width: '100%',
                 height: '100%',
-                 backgroundImage: `url(${ImageBg})`,
+                backgroundImage: `url(${ImageBg})`,
                 my: 0,
                 mx: 0,
                 p: 5,
