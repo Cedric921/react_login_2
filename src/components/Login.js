@@ -78,7 +78,6 @@ const Login = () => {
             sx={{
               bgcolor: 'white',
               textAlign: 'center',
-              borderRadius: '10px',
               px: '8%',
               py: '10px',
             }}
