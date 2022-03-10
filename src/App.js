@@ -1,25 +1,14 @@
-
-import { Routes, Route} from 'react-router-dom'
-import Login from './components/Login';
-import Logon from './components/Logon';
-
+import React from 'react'
+import Logon from './components/Logon'
 
 function App() {
-
   return (
     <div className='App'>
       <div className='circle'>.</div>
       <div className='circle2'>.</div>
-      <Routes>
-        <Route path='/' element={<Logon />} />
-        <Route path='/login' element={<Login />} />
-      </Routes>
-
-      {/*<div className='image'>
-        <img src={ImageBg} alt='' />
-  </div>*/}
+      <Logon />
     </div>
   )
 }
 
-export default App;
+export default App
