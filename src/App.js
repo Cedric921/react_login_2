@@ -1,12 +1,12 @@
 import React from 'react'
-import Logon from './components/Logon'
+import Login from './components/Login'
 
 function App() {
   return (
     <div className='App'>
       <div className='circle'>.</div>
       <div className='circle2'>.</div>
-      <Logon />
+      <Login />
     </div>
   )
 }

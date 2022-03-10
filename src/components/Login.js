@@ -22,7 +22,7 @@ import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption';
 import ImageBg from './../assets/bg.jpg';
 //import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
-const Logon = () => {
+const Login = () => {
   const [values, setValues] = React.useState({
     username: '',
     password: '',
@@ -247,4 +247,4 @@ const Logon = () => {
   )
 }
 
-export default Logon;
+export default Login;
