@@ -1,143 +1,20 @@
-/*
-
-.log{
-  display: flex;
-  align-items: flex-start;
-  width: 48%;
-}
-
-.log h3{
-  padding-left: 10px;
-  color: rgb(59, 54, 54);
-}
-.image{
-  width: 48%;
-  padding: 10px;
-}
-.image img{
-  max-width: 100%;
-  display: block;
-}
-
-
-.App {
-  margin: 10vh auto;
-  padding: 0;
-  background-color: beige;
-  width: 60%;
-  display: flex;
-  align-items: center;
-}
-
-
-.App .formGroup {
-  max-width: 99%;
-  padding: 10px;
-}
-
-.App .btn2 {
-  display: inline-block;
-  width: 48%;
-  text-align: right;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(253, 1, 106);
-}
-
-#term {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  width: auto;
-  color: rgb(253, 1, 106);
-  background-color: rgb(253, 1, 106);
-}
-.term {
+body{
   font-size: 14px;
 }
-
-.App input {
-  background-color: rgb(226, 218, 208);
-  color: rgb(172, 159, 166);
-  width: 95%;
-  border: none;
-  margin: auto;
-  padding: 10px;
-}
-
-.App TextField {
-  width: 95%;
-  border: none;
-  margin: 10px auto;
-  padding: 10px;
-  display: block;
-}
-
-.App .btn1 {
-  background-color: rgb(253, 1, 106);
-  display: inline-block;
-  width: 48%;
-  color: aliceblue;
-}
-
-.App p {
-  background-color: rgb(85, 95, 95);
-}
-
-
-
-@media screen and (max-width: 768px) {
-  .App {
-    flex-direction: column-reverse;
-    padding: 10px;
-    width: 90%;
-    margin: auto;
-  }
-  .log {
-    width: auto;
-  }
-  .image {
-    padding: 40px 0 0 0;
-  }
-  .App .btn1 {
-    width: 100%;
-    margin: 30px auto;
-  }
-  .App .btn2 {
-    width: 100%;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .image {
-    width: 35%;
-  }
-}
-
-@media  screen and (max-width: 768px){
-  .log h3{
-    text-align: center;
-  }
-}
-
-*/
 .circle{
-  position: absolute;
+  position:fixed;
   top: 0;
   left: 0;
   z-index: -999;
   background-color: rgb(253, 2, 2);
-  border-right: 10px solid rgb(214, 11, 11);
+  border-right: 15px solid rgb(179, 0, 0);
   width: 300px;
   height: 300px;
   border-bottom-right-radius:100%;
 }
 
 .circle2{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   z-index: -999;
@@ -146,4 +23,8 @@ a {
   width: 30px;
   height: 20px;
   border-radius: 150% 0 0 0;
+}
+
+.monLogo{
+  width: 50px;
 }

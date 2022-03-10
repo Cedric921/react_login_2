@@ -14,30 +14,30 @@ import {
   InputAdornment,
   IconButton,
   Divider,
-  
 } from '@mui/material'
-import Visibility from '@mui/icons-material/Visibility';
-import VisibilityOff from '@mui/icons-material/VisibilityOff';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import SvgIcon from '@mui/material/SvgIcon';
-import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption';
-import ImageBg from './../assets/bg.jpg';
+import Visibility from '@mui/icons-material/Visibility'
+import VisibilityOff from '@mui/icons-material/VisibilityOff'
+import AccountCircle from '@mui/icons-material/AccountCircle'
+import SvgIcon from '@mui/material/SvgIcon'
+import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption'
+import ImageBg from './../assets/bg.jpg'
+import infinite from './../assets/infinite.png'
 //import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 const Login = () => {
-  const [values, setValues] = React.useState({
+  const [values, setValues] = useState({
     username: '',
     password: '',
     showPassword: false,
-  });
+  })
 
   function HomeIcon(props) {
-  return (
-    <SvgIcon {...props}>
-      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-    </SvgIcon>
-  );
-}
+    return (
+      <SvgIcon {...props}>
+        <path d='M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z' />
+      </SvgIcon>
+    )
+  }
 
   const handleChange = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value })
@@ -63,8 +63,8 @@ const Login = () => {
           container
           sx={{
             bgcolor: 'white',
-            height: '80vh',
-            margin: '20px',
+            height: '90vh',
+            margin: '35px',
             mx: 'auto',
             textAlign: 'center',
             borderRadius: '10px',
@@ -78,7 +78,8 @@ const Login = () => {
             sx={{
               bgcolor: 'white',
               textAlign: 'center',
-              px: '7%',
+              borderRadius: '10px',
+              px: '8%',
               py: '10px',
             }}
           >
@@ -96,6 +97,7 @@ const Login = () => {
                   color: 'red',
                 }}
               >
+                <img src={infinite} alt='mon_logo' className='monLogo' />
                 INFINITY
               </Typography>
               <Typography
@@ -111,11 +113,11 @@ const Login = () => {
 
               <FormControl
                 sx={{ m: 1, p: 0, width: '100%' }}
-                variant='outlined'
+                //variant='outlined'
               >
                 <InputLabel htmlFor='outlined-adornment-password'>
                   Username
-                </InputLabel>
+              </InputLabel>
                 <OutlinedInput
                   id='outlined-adornment'
                   sx={{
@@ -228,7 +230,14 @@ const Login = () => {
               </Box>
             </Stack>
           </Grid>
-          <Grid item xs={12} md={6} sx={{}}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+              borderRadius: '10px',
+            }}
+          >
             <Stack
               sx={{
                 display: 'flex',
@@ -236,6 +245,7 @@ const Login = () => {
                 justifyContent: 'center',
                 width: '100%',
                 height: '100%',
+
                 backgroundImage: `url(${ImageBg})`,
                 my: 0,
                 mx: 0,
@@ -244,6 +254,14 @@ const Login = () => {
                 py: '1%',
               }}
             >
+              <Box
+                sx={{
+                  width: '50px',
+                  p: 1,
+                }}
+              >
+                <img src={infinite} alt='mon_logo' className='monLogo' />
+              </Box>
               <Typography
                 variant='h4'
                 component='h4'
@@ -273,4 +291,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default Login
