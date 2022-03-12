@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-import { Button } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 
 const theme = createTheme({
   components: {
@@ -17,6 +17,10 @@ const theme = createTheme({
         },
       },
     },
+    typography: {
+      color: 'red',
+      textAlign: 'center',
+    },
   },
 })
 
@@ -26,6 +30,14 @@ export const ButtonStyled = (props) => {
   return (
      <ThemeProvider theme={theme}>
        <Button> {props.children}</Button>
+    </ThemeProvider>
+  )
+}
+
+export const TypographyStyled = (props) => {
+  return (
+    <ThemeProvider theme={theme}>
+      <Typography> {props.children}</Typography>
     </ThemeProvider>
   )
 }

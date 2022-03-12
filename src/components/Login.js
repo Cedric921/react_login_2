@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ButtonStyled } from '../themes/Components';
+import { ButtonStyled, TypographyStyled } from '../themes/Components'
 
 import {
   Container,
@@ -87,18 +87,13 @@ const Login = () => {
                 WELCOME TO
               </Typography>
 
-              <Typography
+              <TypographyStyled
                 variant='h4'
                 component='h4'
-                sx={{
-                  /*background: -webkit-linear-gradient(#eee, #333);*/
-                  textAlign: 'center',
-                  color: 'red',
-                }}
               >
                 <img src={infinite} alt='mon_logo' className='monLogo' />
                 INFINITY
-              </Typography>
+              </TypographyStyled>
               <Typography
                 variant='p'
                 component='p'
@@ -116,7 +111,7 @@ const Login = () => {
               >
                 <InputLabel htmlFor='outlined-adornment-password'>
                   Username
-              </InputLabel>
+                </InputLabel>
                 <OutlinedInput
                   id='outlined-adornment'
                   sx={{
@@ -188,7 +183,6 @@ const Login = () => {
               </FormControl>
               <Stack justifyContent='space-between' direction='row'>
                 <ButtonStyled>SIGN IN</ButtonStyled>
-                
               </Stack>
               <Typography component='span'>
                 Do you have any account ?{' '}
