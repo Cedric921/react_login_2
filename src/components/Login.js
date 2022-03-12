@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { ButtonStyled } from '../themes/Components';
 
 import {
   Container,
   Grid,
   Stack,
-  Button,
   Box,
   CssBaseline,
   InputLabel,
@@ -187,18 +187,8 @@ const Login = () => {
                 />
               </FormControl>
               <Stack justifyContent='space-between' direction='row'>
-                <Button
-                  color='primary'
-                  variant='contained'
-                  sx={{
-                    px: '0',
-                    width: '100%',
-                    bgcolor: 'red',
-                    borderRadius: 4,
-                  }}
-                >
-                  SIGN IN
-                </Button>
+                <ButtonStyled>SIGN IN</ButtonStyled>
+                
               </Stack>
               <Typography component='span'>
                 Do you have any account ?{' '}
