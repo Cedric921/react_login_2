@@ -18,8 +18,10 @@ const theme = createTheme({
       },
     },
     typography: {
-      color: 'red',
-      textAlign: 'center',
+      h4: {
+        color: 'red',
+        textAlign: 'center',
+      }
     },
   },
 })
