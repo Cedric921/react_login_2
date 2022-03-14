@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ButtonStyled, TypographyStyled } from '../themes/Theme';
+import { ButtonStyled, TypographyStyled } from '../themes/Components';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from '../themes/Theme'; 
 
