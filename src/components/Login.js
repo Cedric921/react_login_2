@@ -24,7 +24,6 @@ import SvgIcon from '@mui/material/SvgIcon'
 import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption'
 import ImageBg from './../assets/bg.jpg'
 import infinite from './../assets/infinite.png'
-//import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 const Login = () => {
   const [values, setValues] = useState({

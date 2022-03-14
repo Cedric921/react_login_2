@@ -1,18 +1,19 @@
 import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-import { Button, Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material';
+import { red } from '@mui/material/colors';
 
 const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          background: 'linear-gradient(45deg, #FE6B8B, #FF8E53)',
+          background: 'linear-gradient(45deg, red, #FF8E53)',
           border: 0,
           borderRadius: 15,
           width: '100%',
-          color: 'white',
+          color: red[50],
           padding: '15px 30px',
         },
       },
