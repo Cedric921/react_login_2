@@ -2,9 +2,9 @@ import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import { Button, Typography } from '@mui/material';
-import { red } from '@mui/material/colors';
+import { red, purple } from '@mui/material/colors'
 
-const theme = createTheme({
+export const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
@@ -22,7 +22,15 @@ const theme = createTheme({
       h4: {
         color: 'red',
         textAlign: 'center',
-      }
+      },
+    },
+    palette: {
+      primary: {
+        main: red['A700'],
+      },
+      secondary: {
+        main: red[400],
+      },
     },
   },
 })
