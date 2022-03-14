@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ButtonStyled, TypographyStyled } from '../themes/Components';
+import { ButtonStyled, TypographyStyled } from '../themes/Theme';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from '../themes/Theme'; 
 
@@ -69,7 +69,7 @@ const Login = () => {
               margin: '35px',
               mx: 'auto',
               textAlign: 'center',
-              borderRadius: '10px',
+              borderRadius: 5,
               boxShadow: '0 2px 8px 0 rgba(0,0,0,0.4)',
             }}
           >
@@ -78,10 +78,11 @@ const Login = () => {
               xs={12}
               md={6}
               sx={{
-                bgcolor: 'white',
+                bgcolor: 'primary',
                 textAlign: 'center',
-                px: '8%',
-                py: '10px',
+                borderRadius: 5,
+                px: 10,
+                py: 2,
               }}
             >
               <Stack spacing={2}>
