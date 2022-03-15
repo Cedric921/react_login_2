@@ -21,7 +21,11 @@ import Visibility from '@mui/icons-material/Visibility'
 import VisibilityOff from '@mui/icons-material/VisibilityOff'
 import AccountCircle from '@mui/icons-material/AccountCircle'
 import SvgIcon from '@mui/material/SvgIcon'
-import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption'
+import EnhancedEncryptionIcon from '@mui/icons-material/EnhancedEncryption';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import GoogleIcon from '@mui/icons-material/Google';
+import FacebookIcon from '@mui/icons-material/Facebook'
+
 import ImageBg from './../assets/bg.jpg'
 import infinite from './../assets/infinite.png'
 
@@ -207,10 +211,9 @@ const Login = () => {
                     justifyContent: 'center',
                   }}
                 >
-                  <HomeIcon sx={{ color: 'red' }} />
-                  <HomeIcon sx={{ color: 'red' }} />
-                  <HomeIcon sx={{ color: 'red' }} />
-                  <HomeIcon sx={{ color: 'red' }} />
+                  <GitHubIcon sx={{ color: 'red', marginX: 1 }} />
+                  <GoogleIcon sx={{ color: 'red', marginX: 1 }} />
+                  <FacebookIcon sx={{ color: 'red', marginX: 1 }} />
                 </Box>
               </Stack>
             </Grid>

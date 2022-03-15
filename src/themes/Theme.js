@@ -14,7 +14,7 @@ export const theme = createTheme({
       main: red[400],
     },
   },
-  Button: {
+  MuiButton: {
     styleOverrides: {
       root: {
         background: 'linear-gradient(45deg, red, #FF8E53)',
